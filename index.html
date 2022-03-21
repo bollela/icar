@@ -25,6 +25,7 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg fixed-top bg-primary-color " id="navbar">
         <div class="container py-3">
@@ -32,7 +33,8 @@
                 <img src="./images/imovi-icon.png" alt="imovi">
                 <span>iMovi</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbar-items" aria-expanded="false" aria-label="toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
+                aria-controls="navbar-items" aria-expanded="false" aria-label="toggle navigation">
                 <i class="bi bi-list"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbar-items">
@@ -53,6 +55,48 @@
             </div>
         </div>
     </nav>
+    <!-- Slider -->
+    <div class="container" id="slider-container">
+        <div class="carousel slide" id="slider" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" class="active" data-bs-target="#slider" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/images/banner-1.jpg" alt="casa 1" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Casas planejadas</h5>
+                        <a href="#" class="btn btn-dark">Ver projetos</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/banner-2.jpg" alt="casa 2" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Projetos Complexos</h5>
+                        <a href="#" class="btn btn-dark">Ver projetos</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/images/banner-3.jpg" alt="casa 3" class="d-block w-100">
+                    <div class="carousel-caption">
+                        <h5>Projetos Inovadores</h5>
+                        <a href="#" class="btn btn-dark">Ver projetos</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev">
+                <i class="bi bi-chevron-compact-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next">
+                <i class="bi bi-chevron-compact-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- mini-banners -->
+    </div>
 </body>
 
 </html>
